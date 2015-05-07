@@ -43,8 +43,7 @@ listOfTuples (x:xs)
 -- | Check birthday string. Only "Day Month Year"
 validBD :: String -> Bool
 validBD str =
-    str =~ "^[0-9]+ (January|February|March|April|May|June|July|August \
-                   \|September|October|November|December) [0-9]{4}$"
+    str =~ "^[0-9]+ (January|February|March|April|May|June|July|August|September|October|November|December) [0-9]{4}$"
 
 parseName :: String -> String
 parseName = drop (length "NM: ")
